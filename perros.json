@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Domino",
+    "foto": "imagenes/Domino.jpg",
+    "edad": "3 años",
+    "castrado": "Sí",
+    "puedequedarsolo": "Sí",
+    "sociableconperros": "Sí",
+    "dueno": "María García",
+    "telefono": "+34 600 000 000",
+    "alimentacion": "Pienso 200g (2 veces al día)",
+    "saludyalergias": "Alergia al pollo",
+    "advertencias": "Miedo a los petardos / truenos",
+    "comentariosadicionales": "Muy juguetón con pelotas. Le gusta dormir cerca de las ventanas."
+  },
+  {
+    "id": 2,
+    "nombre": "Jasper",
+    "foto": "imagenes/Jasper.jpg",
+    "edad": "4 años",
+    "castrado": "Sí",
+    "puedequedarsolo": "No (aúlla si pasa más de 1 hora)",
+    "sociableconperros": "Sí, muy tranquila",
+    "dueno": "Carlos Rodríguez",
+    "telefono": "+34 611 111 111",
+    "alimentacion": "Dieta Barf / Pienso Salmón 150g",
+    "saludyalergias": "Sensibilidad digestiva",
+    "advertencias": "Protege el plato de comida con otros perros",
+    "comentariosadicionales": "Prefiere paseos calmados. Se lleva excelente con perros pequeños."
+  }
+]

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Guardería Coco Loco - Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Configuración para funcionamiento como PWA en iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- 1. Pantalla de Seguridad (PIN) con Video -->
+        <div id="login-screen">
+            <video autoplay loop muted playsinline id="bg-video">
+                <source src="cocovideo.mov" type="video/quicktime">
+                <source src="cocovideo.mov" type="video/mp4">
+            </video>
+            
+            <div class="login-box">
+                <h2>Guardería Coco Loco</h2>
+                <p>Introduce tu PIN de acceso</p>
+                <input type="password" id="pin-input" maxlength="4" placeholder="••••" autocomplete="off">
+                <button id="login-btn">Entrar</button>
+                <div id="login-error" class="login-error">PIN incorrecto</div>
+            </div>
+        </div>
+
+        <!-- 2. Cabecera con foto y buscador -->
+        <header>
+            <h1>Nuestros Huéspedes Coco Loco</h1>
+            <input type="text" id="search-input" class="search-bar" placeholder="Buscar por nombre de perro...">
+        </header>
+
+        <!-- 3. Lista interactiva de Perros -->
+        <div id="dog-list" class="dog-list">
+            <!-- Las tarjetas cargan dinámicamente desde app.js -->
+        </div>
+
+        <!-- 4. Modal con detalles completos del perro -->
+        <div id="dog-modal" class="modal">
+            <div class="modal-content">
+                <button id="close-modal" class="close-btn">&times;</button>
+                <div class="modal-header">
+                    <img id="modal-foto" src="" alt="Foto del perro">
+                    <h2 id="modal-nombre">Nombre</h2>
+                </div>
+                
+                <div class="detail-group">
+                    <label>Edad</label>
+                    <p id="modal-edad">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Dueño / Teléfono</label>
+                    <p id="modal-dueno">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>¿Está castrado/a?</label>
+                    <p id="modal-castrado">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>¿Puede quedar solo?</label>
+                    <p id="modal-puedequedarsolo">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Socialización con otros perros</label>
+                    <p id="modal-sociableconperros">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Alimentación y Dieta</label>
+                    <p id="modal-alimentacion">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Salud y Alergias</label>
+                    <p id="modal-saludyalergias">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Advertencias</label>
+                    <p id="modal-advertencias">-</p>
+                </div>
+                <div class="detail-group">
+                    <label>Comentarios adicionales</label>
+                    <p id="modal-comentariosadicionales">-</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Carga de la lógica de la app -->
+    <script src="app.js"></script>
+</body>
+</html>
